@@ -1,0 +1,170 @@
+body {
+    color: hsl(0, 0%, 7%);
+    min-height: 100vh;
+    cursor: url(arrow.ico),auto;
+    background-image: radial-gradient(#e6e6e6 2.5px,transparent 2.5px);
+    background-size: 41px 41px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    margin: 0;
+    min-height: calc(100vh - 3rem); 
+    flex-direction: column;
+    overflow-y: auto;
+    overflow: auto;
+}
+
+.bio {
+    text-align: center;
+}
+
+.bio_image {
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 35%;
+    height: auto;
+    margin-top: 2rem;  
+    max-height: 40vh;     
+    object-fit: cover;
+}
+
+@media (max-height: 700px) {
+    .bio_image {
+        width: 30%;
+        margin-top: 3rem;
+        max-height: 30vh;
+    }
+    main {
+        padding-top: 1rem;
+    }
+}
+
+.bio_title {
+    margin-bottom: 2em;
+    margin-top: 1em;
+    font-size: large;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    flex-shrink: 1;
+}
+
+.bttn {
+    font-size: 17px;
+    margin-top: 1.5em;
+    margin-left: 0.5em;
+    padding: 0.5em 1em;
+    border: 2px solid #c3c6ce;
+    background-color: white;
+    color: #121212;
+    border-radius: 10px;
+}
+
+.bttn:hover {
+    background: #f5f5f5;
+    border-color: #151515;
+}
+
+.bttn:active {
+    transform: translate(0em, 0.2em);
+}
+
+.bttn2 {
+    font-size: 21px;
+    width: 80%;
+    padding: 0.5em 3em;
+    border: 2px solid #c3c6ce;
+    background-color: white;
+    color: #121212;
+    border-radius: 10px;
+}
+
+.bttn2:active {
+    transform: translate(0em, 0.2em);
+}
+
+.purple{
+    background-color: #A888B5;
+}
+
+.pink{
+    background-color: #EFB6C8;
+}
+
+.blue{
+    background-color: #6D94C5;
+}
+
+.orange{
+    background-color: #F39E60;
+}
+
+.red{
+    background-color: #DA6C6C;
+}
+
+.purple:hover {
+    background: #876C91;
+    border-color: #151515;
+    color: white;
+}
+
+.pink:hover {
+    background: #C28A9F;
+    border-color: #151515;
+    color: white;
+}
+
+.blue:hover {
+    background: #4C6E9A;
+    border-color: #151515;
+    color: white;
+}
+
+.orange:hover {
+    background: #C2794C;
+    border-color: #151515;
+    color: white;
+}
+
+.red:hover {
+    background: #B05353;
+    border-color: #151515;
+    color: white;
+}
+
+.deezer {
+    margin-top: 2rem;
+    border-radius: 10px;
+    width: 80%;
+}
+
+@media only screen and (min-width:767px){
+    .bttn2{
+        width: 60%;
+    }
+    .deezer {
+        width: 29%;
+    }
+}
