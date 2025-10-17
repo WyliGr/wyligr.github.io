@@ -1,0 +1,248 @@
+body {
+    color: hsl(0, 0%, 7%);
+    height: 97vh;
+    cursor: url(arrow.ico),auto;
+    background-image: radial-gradient(#e6e6e6 2.5px,transparent 2.5px);
+    background-size: 41px 41px;
+    background-color: #fff;
+}
+
+a:link,
+a:visited {
+    color: #878787;
+}
+
+.cards {
+    cursor: url(sizens.ico),auto;
+}
+
+.scroll_icon {
+    display: none;
+}
+
+.icon:link,
+.icon:visited {
+    color: #121212;
+}
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95%;
+}
+
+head{
+    height: 5%;
+}
+
+.section_titles {
+    text-align: start;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.bio_image {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.big-title {
+    font-size: 200%;
+    line-height: 1.1;
+}
+
+.bio-title {
+    margin-top: -20px;
+}
+
+.bio_container,
+.grids_main {
+    display: flex;
+    justify-content: center;
+}
+
+.bio_container {
+    align-items: center;
+    text-align: center;
+}
+
+.grids_main {
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.card1,
+.card2 {
+    margin-top: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    overflow: visible;
+    transition: .2s ease-out;
+    background-color: #fff;
+}
+
+.card2 {
+    width: 310px;
+}
+
+.text-body,
+.text-title {
+    color: #868686;
+    font-family: "Figtree",sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-title {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: -10px;
+    text-align: center;
+    color: #121212;
+}
+
+.button_link,
+.phone-not-show {
+    display: none;
+}
+
+.card1:hover,
+.card2:hover {
+    border-color: #121212;
+    background: #f5f5f5;
+}
+
+.phone-show {
+    display: initial;
+}
+
+.button {
+    padding: 15px 20px;
+    border: 0;
+    outline: 0;
+    background-color: #151515;
+    color: #eee;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .25s ease-out;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.button-span {
+    color: #aaa;
+}
+
+.bttn {
+ font-size: 17px;
+ margin-top: 1.5em;
+ margin-left: 1em;
+ padding: 0.5em 1em;
+ border: transparent;
+ background: #121212;
+ color: white;
+ border-radius: 4px;
+}
+
+.bttn:hover {
+ background: rgb(2,0,36);
+ background: linear-gradient(90deg, #121212 0%, #000000 100%);
+}
+
+.bttn:active {
+ transform: translate(0em, 0.2em);
+}
+
+@media only screen and (min-width:767px) {
+    .main_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .scroll_icon {
+    display: initial;
+    }
+
+    .bio_image {
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+        width: 40%;
+        height: auto;
+        margin-top: 2rem;
+        align-self: flex-start;
+    }
+
+    .big-title {
+        font-size: 200%;
+        line-height: 1.1;
+    }
+
+    .bio-title {
+        margin-top: -20px;
+    }
+
+    .bio_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .button_link {
+        display: initial;
+        font-size: 1em;
+        padding: .5em 1em;
+        border: transparent;
+        background: #121212;
+        color: #fff;
+        border-radius: 11em;
+    }
+
+    .button_link:hover {
+        background: #020024;
+        background: linear-gradient(90deg,#121212 0,#444 100%);
+    }
+
+    .button_link:active {
+        transform: translate(0,.2em);
+        transition: .2s .1s ease-out;
+    }
+
+    .cards {
+        justify-content: start;
+        overflow-y: auto;
+        max-height: 810px;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .cards::-webkit-scrollbar {
+        display: none;
+    }
+
+    .phone-not-show {
+        display: initial;
+    }
+
+    .phone-show {
+        display: none;
+    }
+}
